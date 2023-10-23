@@ -1,1 +1,3 @@
-export const App = () => <h1>Hello world</h1>;
+import styles from './App.module.css';
+
+export const App = () => <h1 className={styles.fon}>Hello world</h1>;
