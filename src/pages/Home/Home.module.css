@@ -1,0 +1,27 @@
+.navigate {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: gray;
+}
+
+.navigate li {
+    margin: 0 5% 0 5%;
+}
+
+.nameSalon {
+    text-align: center;
+    font-weight: bold;
+    font-size: 64px;
+    color: gray;
+}
+
+.onlineRecord {
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: #4A3736;
+    margin: 0 45%;
+    padding: 5px;
+}

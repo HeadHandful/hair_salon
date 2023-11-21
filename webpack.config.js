@@ -20,13 +20,9 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     port: 3000,
-    open: {
-      app: {
-        name: 'google-chrome',
-      },
-    },
+    open: true,
+    historyApiFallback: true,
   },
-  // ...,
   module: {
     // exclude node_modules
     rules: [
@@ -57,5 +53,5 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx'], // <-- added `.jsx` here
   },
-  plugins: [new HtmlWebpackPlugin({template: './public/index.html'}), new Dotenv()],
+  plugins: [new HtmlWebpackPlugin({template: path.join(__dirname, 'public', 'index.html')}), new Dotenv()],
 };
