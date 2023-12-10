@@ -1,9 +1,6 @@
 {
     "extends": ["airbnb", "prettier"],
     "plugins": ["prettier"],
-    "parserOptions": {
-      "project": "./tsconfig.json"
-    },
     "rules": {
       "prettier/prettier": "error",
       "no-unused-vars": "error",

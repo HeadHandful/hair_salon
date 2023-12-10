@@ -1,6 +1,7 @@
 import {createRoot} from 'react-dom/client';
 import {RouterProvider} from 'react-router-dom';
 import {router} from './routing/routes';
+import './styles/global.css';
 
 const domNode = document.getElementById('root');
 const root = createRoot(domNode);

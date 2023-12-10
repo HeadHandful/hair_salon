@@ -1,0 +1,14 @@
+.fon {
+    display: flex;
+    justify-content: center;
+    background-color: #2A2A2A;
+    height: 200px;
+}
+
+.colorText {
+    list-style-type: none;
+    font-weight: light;
+    color: #909090;
+    font-size: 20px;
+    padding: 45px;
+}

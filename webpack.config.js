@@ -27,12 +27,20 @@ module.exports = {
     // exclude node_modules
     rules: [
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
         test: /\.(js|jsx)$/, // <-- added `|jsx` here
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
       {
-        test: /\.module.css$/,
+        test: /\.css$/,
         use: [
           {loader: 'style-loader'},
           {
