@@ -27,14 +27,6 @@ module.exports = {
     // exclude node_modules
     rules: [
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
-      {
         test: /\.(js|jsx)$/, // <-- added `|jsx` here
         exclude: /node_modules/,
         use: ['babel-loader'],
@@ -55,6 +47,25 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(ttf|eot|woff2?)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext][query]',
+        },
+      },
+      {
+        test: /\.(jpg|png|svg|gif)$/,
+        type: 'asset/resource',
+      },
+      // {
+      //   test: /\.(png|jpe?g|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //     },
+      //   ],
+      // },
     ],
   },
   // pass all js files through Babel

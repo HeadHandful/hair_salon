@@ -1,0 +1,20 @@
+.nameMaster {
+    color: #000;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.biography {
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.positionsMasters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizeImageMaster {
+    height: fit-content;
+}

@@ -1,0 +1,19 @@
+.positionTable {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.manBackground {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+td {
+    padding: 20px;
+}
+
+.costHaers {
+    padding-left: 300px;
+}

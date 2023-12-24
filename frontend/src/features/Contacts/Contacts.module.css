@@ -1,0 +1,13 @@
+.contactsPosition {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 0;
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.contactsText {
+    margin-top: 15px;
+    margin-left: 40px;
+}

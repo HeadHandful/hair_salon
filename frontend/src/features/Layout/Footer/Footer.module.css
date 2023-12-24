@@ -1,6 +1,6 @@
 .fon {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #2A2A2A;
     height: 200px;
 }
