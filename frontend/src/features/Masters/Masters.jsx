@@ -2,6 +2,7 @@ import styles from './Masters.module.css';
 import FirstMaster from '../../assets/images/Toxa.jpg';
 import SecondMaster from '../../assets/images/Vit.jpg';
 
+// todo убрать повтор
 export const Masters = () => (
   <div className={styles.positionsMasters}>
     <div className={styles.positionsMasters}>
@@ -24,6 +25,7 @@ export const Masters = () => (
     <div className={styles.positionsMasters}>
       <div>
         <h3 className={styles.nameMaster}>Виталя Подстригало</h3>
+        {/* поправить разметку, избавиться от /br */}
         <p className={styles.biography}>
           Виталий человек дела, он не любит
           <br />

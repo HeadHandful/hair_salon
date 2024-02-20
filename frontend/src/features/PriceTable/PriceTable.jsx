@@ -1,5 +1,8 @@
+import cn from 'classnames';
 import styles from './PriceTable.module.css';
+import ServiceTable from './parts/';
 
+// TODO перенести прайс таблицу в services
 const servicesWoman = [
   {haircut: 'Стрижка', price: 550},
   {haircut: 'Стрижка креативная + Каре', price: 650},
@@ -30,11 +33,13 @@ const servicesMan = [
   {haircut: 'Оформление усов', price: 50},
 ];
 
+// todo перенести в parts
+
 const ServiceTable = ({services}) => (
   <table>
     <tr>
-      <th>Услуга</th>
-      <th className={styles.costHaers}>Прайс</th>
+      <th className={styles.serviceAndPrise}>Услуга</th>
+      <th className={cn(styles.costHaers, styles.serviceAndPrise)}>Прайс</th>
     </tr>
     {services.map((service) => (
       <tr key={service.haircut}>
@@ -48,14 +53,14 @@ const ServiceTable = ({services}) => (
 export const PriceTable = () => (
   <div className={styles.positionTable}>
     <div>
-      <h3>Женский лист</h3>
+      <h3 className={styles.positionCostSex}>Женский лист</h3>
       <div>
         <ServiceTable services={servicesWoman} />
       </div>
     </div>
 
     <div>
-      <h3>Мужской лист</h3>
+      <h3 className={styles.positionCostSex}>Мужской лист</h3>
       <div className={styles.manBackground}>
         <ServiceTable services={servicesMan} />
       </div>

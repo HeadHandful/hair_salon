@@ -18,7 +18,7 @@ a {
   box-sizing: border-box;
 }
 
-input[type='submit'],
+/* input[type='submit'],
 input[type='reset'],
 input[type='button'],
 button {
@@ -33,7 +33,7 @@ button {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-}
+} */
 
 input::-moz-focus-inner,
 button::-moz-focus-inner {
